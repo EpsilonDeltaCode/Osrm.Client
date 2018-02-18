@@ -29,7 +29,7 @@ namespace Osrm.Client.Models
                 if (LocationArr == null)
                     return null;
 
-                return new Location(LocationArr[0], LocationArr[1]);
+                return new Location(LocationArr[1], LocationArr[0]);
             }
         }
 
