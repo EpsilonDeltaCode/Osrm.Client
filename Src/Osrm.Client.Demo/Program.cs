@@ -1,6 +1,5 @@
-﻿using Osrm.Client.V5;
-using Osrm.Client.V5.Base;
-using Osrm.Client.V5.Models.Requests;
+﻿using Osrm.Client.Base;
+using Osrm.Client.Models.Requests;
 
 namespace Osrm.Client.Demo
 {
@@ -66,7 +65,7 @@ namespace Osrm.Client.Demo
             var result = osrm.Table(locations);
 
             //Returns a 1x3 matrix:
-            var result2 = osrm.Table(new V5.Models.Requests.TableRequest()
+            var result2 = osrm.Table(new TableRequest()
             {
                 Coordinates = locations,
                 Sources = new uint[] { 0 }
@@ -75,7 +74,7 @@ namespace Osrm.Client.Demo
             });
 
             //Returns a asymmetric 3x2 matrix with from the polyline encoded locations qikdcB}~dpXkkHz:
-            var result3 = osrm.Table(new V5.Models.Requests.TableRequest()
+            var result3 = osrm.Table(new TableRequest()
             {
                 Coordinates = locations,
                 SendCoordinatesAsPolyline = true,
@@ -94,7 +93,7 @@ namespace Osrm.Client.Demo
                 new Location(52.523219, 13.428555)
             };
 
-            var request = new V5.Models.Requests.MatchRequest()
+            var request = new MatchRequest()
             {
                 Coordinates = locations
             };

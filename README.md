@@ -2,6 +2,18 @@ Osrm.Client
 ==========
 A Http client for OSRM for 4x and 5x API
 
+## Changelog (EpsilonDeltaCode)
+
+- V4 and V5 are seperated projects now
+- reorganized namespaces
+- seperated V4 and V5 to independant Folders and namespaces
+  -- doubling of core classes
+  -- possible loss of downward compatibility
+  -- commented out the V4 demo
+- some properties from protected to public
+- "return new Location(LocationArr[0], LocationArr[1]);" into "return new Location(LocationArr[1], LocationArr[0]);"
+
+
 ## Example for API 5x
 #### Route
 ```csharp

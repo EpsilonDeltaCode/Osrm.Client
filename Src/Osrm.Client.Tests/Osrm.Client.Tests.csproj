@@ -56,9 +56,9 @@
     <Compile Include="ResponseTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Osrm.Client\Osrm.Client.csproj">
-      <Project>{a015cae3-5fea-4f88-935e-135e6d6a48c2}</Project>
-      <Name>Osrm.Client</Name>
+    <ProjectReference Include="..\Osrm.Client.V4\Osrm.Client.V4.csproj">
+      <Project>{e021ea2a-d38d-490b-abfe-006d4e8b57bc}</Project>
+      <Name>Osrm.Client.V4</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
