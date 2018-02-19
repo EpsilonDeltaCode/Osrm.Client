@@ -1,9 +1,11 @@
 Osrm.Client
 ==========
-A Http client for OSRM for 4x and 5x API
+A Http client for OSRM (for 4x) and 5x API
 
 ## Changelog (EpsilonDeltaCode)
 
+- added support for intersections in steps
+  - new class StepIntersection
 - V4 and V5 are seperated projects now
 - reorganized namespaces
 - seperated V4 and V5 to independant Folders and namespaces
