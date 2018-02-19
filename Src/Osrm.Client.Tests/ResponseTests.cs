@@ -1,10 +1,15 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Osrm.Client.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Osrm.Client.V4;
+using Osrm.Client.V4.Models;
+using Osrm.Client.V4.Models.Requests;
+using Osrm.Client.V4.Models.Responses;
+using MatchRequest = Osrm.Client.V4.Models.Requests.MatchRequest;
+using TableRequest = Osrm.Client.V4.Models.Requests.TableRequest;
 
 namespace Osrm.Client.Tests
 {

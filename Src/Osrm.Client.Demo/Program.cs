@@ -1,10 +1,6 @@
-﻿using Osrm.Client.Models;
-using Osrm.Client.v5;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Osrm.Client.V5;
+using Osrm.Client.V5.Base;
+using Osrm.Client.V5.Models.Requests;
 
 namespace Osrm.Client.Demo
 {
@@ -22,12 +18,12 @@ namespace Osrm.Client.Demo
             Trip5x(osrm5x);
 
             //  4x
-            OsrmClient osrm4x = new OsrmClient(OsrmUrl);
-            Route4x(osrm4x);
-            Table4x(osrm4x);
-            Match4x(osrm4x);
-            Nearest4x(osrm4x);
-            Trip4x(osrm4x);
+            // OsrmClient osrm4x = new OsrmClient(OsrmUrl);
+            // Route4x(osrm4x);
+            // Table4x(osrm4x);
+            // Match4x(osrm4x);
+            // Nearest4x(osrm4x);
+            // Trip4x(osrm4x);
         }
 
         private static void Route5x(Osrm5x osrm)
@@ -70,7 +66,7 @@ namespace Osrm.Client.Demo
             var result = osrm.Table(locations);
 
             //Returns a 1x3 matrix:
-            var result2 = osrm.Table(new Osrm.Client.Models.TableRequest()
+            var result2 = osrm.Table(new V5.Models.Requests.TableRequest()
             {
                 Coordinates = locations,
                 Sources = new uint[] { 0 }
@@ -79,7 +75,7 @@ namespace Osrm.Client.Demo
             });
 
             //Returns a asymmetric 3x2 matrix with from the polyline encoded locations qikdcB}~dpXkkHz:
-            var result3 = osrm.Table(new Osrm.Client.Models.TableRequest()
+            var result3 = osrm.Table(new V5.Models.Requests.TableRequest()
             {
                 Coordinates = locations,
                 SendCoordinatesAsPolyline = true,
@@ -98,7 +94,7 @@ namespace Osrm.Client.Demo
                 new Location(52.523219, 13.428555)
             };
 
-            var request = new Osrm.Client.Models.MatchRequest()
+            var request = new V5.Models.Requests.MatchRequest()
             {
                 Coordinates = locations
             };
@@ -115,6 +111,8 @@ namespace Osrm.Client.Demo
 
             var result = osrm.Trip(locations);
         }
+
+        /*
 
         #region 4x
 
@@ -205,5 +203,7 @@ namespace Osrm.Client.Demo
         }
 
         #endregion 4x
+        
+        */
     }
 }

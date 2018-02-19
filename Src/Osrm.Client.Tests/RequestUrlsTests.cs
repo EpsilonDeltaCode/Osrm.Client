@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Osrm.Client.V4.Models;
+using Osrm.Client.V4.Models.Requests;
 
 namespace Osrm.Client.Tests
 {
