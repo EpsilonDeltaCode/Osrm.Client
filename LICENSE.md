@@ -1,6 +1,11 @@
 The MIT License (MIT)
 
-Copyright (c) 2015 WCOM AB
+Copyright (c) for portions of project "EpsilonDeltaCode/Osrm.Client"
+(forked from project "narfunikita/Osrm.Client")
+are held by WCOM AB, 2015 as part of project "narfunikita/Osrm.Client".
+All other copyright (c) for project "EpsilonDeltaCode/Osrm.Client"
+are held by EpsilonDeltaCode, 2018.
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +24,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+The original License of project "narfunikita/Osrm.Client" can be found at
+"https://github.com/narfunikita/Osrm.Client/blob/master/LICENSE.md"
