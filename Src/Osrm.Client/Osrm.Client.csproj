@@ -55,6 +55,7 @@
     <Compile Include="Models\Leg.cs" />
     <Compile Include="Models\Requests\TripRequest.cs" />
     <Compile Include="Models\Responses\TripResponse.cs" />
+    <Compile Include="Models\StepIntersection.cs" />
     <Compile Include="Models\StepManeuver.cs" />
     <Compile Include="Models\Requests\BaseRequest.cs" />
     <Compile Include="Models\Requests\MatchRequest.cs" />

@@ -7,6 +7,9 @@ namespace Osrm.Client.Models
     [DataContract]
     public class RouteStep
     {
+        [DataMember(Name = "intersections")]
+        public StepIntersection[] Intersections { get; set; }
+
         [DataMember(Name = "distance")]
         public double Distance { get; set; }
 
